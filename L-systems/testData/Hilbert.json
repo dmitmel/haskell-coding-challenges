@@ -1,0 +1,9 @@
+{
+    "name": "Hilbert",
+    "angle": 90,
+    "axiom": "A",
+    "rules": {
+        "A": "-BF+AFA+FB-",
+        "B": "+AF-BFB-FA+"
+    }
+}

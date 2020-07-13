@@ -1,0 +1,8 @@
+{
+    "name": "Koch",
+    "angle": 60,
+    "axiom": "F++F++F",
+    "rules": {
+        "F": "F-F++F-F"
+    }
+}

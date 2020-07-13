@@ -1,0 +1,9 @@
+{
+    "name": "Pythagoras",
+    "angle": 45,
+    "axiom": "^F",
+    "rules": {
+        "F": "G[+F]-F",
+        "G": "GG"
+    }
+}

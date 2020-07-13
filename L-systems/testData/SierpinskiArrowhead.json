@@ -1,0 +1,9 @@
+{
+    "name": "Sierpinski Arrowhead",
+    "angle": 60,
+    "axiom": "F",
+    "rules": {
+        "F": "G-F-G",
+        "G": "F+G+F"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Dragon",
+    "angle": 90,
+    "axiom": "FX",
+    "rules": {
+        "X": "X+YF",
+        "Y": "FX-Y"
+    }
+}

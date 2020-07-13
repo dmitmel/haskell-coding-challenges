@@ -1,0 +1,9 @@
+{
+    "name": "Flow Snake",
+    "angle": 60,
+    "axiom": "F",
+    "rules": {
+        "F": "F-G--G+F++FF+G-",
+        "G": "+F-GG--G-F++F+G"
+    }
+}

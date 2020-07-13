@@ -1,0 +1,5 @@
+"package.yaml":
+    command: [
+        "hpack"
+        "cabal configure"
+    ]

@@ -1,0 +1,9 @@
+{
+    "name": "Fractal Plant",
+    "angle": 25,
+    "axiom": "^X",
+    "rules": {
+        "X": "F[-X][X]F[-X]+FX",
+        "F": "FF"
+    }
+}

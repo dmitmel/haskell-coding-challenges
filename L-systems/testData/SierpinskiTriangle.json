@@ -1,0 +1,9 @@
+{
+    "name": "Sierpinski Triangle",
+    "angle": 120,
+    "axiom": "F-G-G",
+    "rules": {
+        "F": "F-G+F+G-F",
+        "G": "GG"
+    }
+}

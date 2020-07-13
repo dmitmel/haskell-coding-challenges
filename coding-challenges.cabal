@@ -1,0 +1,179 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c1229b3ca22ba033f7655ce7be384edfd3f872159b9e1e10c6df0abeecf401e5
+
+name:           coding-challenges
+version:        0.1.0
+synopsis:       Implementations of TheCodingTrain's Coding Challenges in Haskell
+description:    See README at <https://github.com/dmitmel/coding-challenges#readme>
+category:       Learning
+stability:      stable
+homepage:       https://github.com/dmitmel/coding-challenges#readme
+bug-reports:    https://github.com/dmitmel/coding-challenges/issues
+author:         Dmytro Meleshko
+maintainer:     Dmytro Meleshko <dmytro.meleshko@gmail.com>
+copyright:      (c) 2017 Dmytro Meleshko
+license:        Apache-2.0
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    LICENSE
+
+source-repository head
+  type: git
+  location: https://github.com/dmitmel/coding-challenges
+
+library
+  exposed-modules:
+      Graphics.Gloss.Raster.Pixels
+      Math
+      Math.LinearAlgebra.Epsilon
+      Math.LinearAlgebra.Matrix.Matrix2x2
+      Math.LinearAlgebra.Vector
+      Math.LinearAlgebra.Vector.Vector2
+      Math.LinearAlgebra.Vector.Vector3
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      lib
+  ghc-options: -Wall
+  build-depends:
+      base
+    , bytestring
+    , gloss
+    , random
+  default-language: Haskell2010
+
+executable L-systems
+  main-is: Main.hs
+  other-modules:
+      CodingChallanges.LSystems
+      CodingChallanges.LSystems.Config
+      CodingChallanges.LSystems.LSystem
+      CodingChallanges.LSystems.SVG
+      CodingChallanges.LSystems.Turtle
+      Paths_coding_challenges
+  hs-source-dirs:
+      L-systems
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , argparser
+    , base
+    , bytestring
+    , coding-challenges
+    , containers
+    , gloss
+  default-language: Haskell2010
+
+executable elemetary-cellular-automata
+  main-is: Main.hs
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      elemetary-cellular-automata
+  ghc-options: -Wall
+  build-depends:
+      base
+    , coding-challenges
+    , gloss
+  default-language: Haskell2010
+
+executable game-of-life
+  main-is: Main.hs
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      game-of-life
+  ghc-options: -Wall
+  build-depends:
+      base
+    , gloss
+  default-language: Haskell2010
+
+executable gravity
+  main-is: Main.hs
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      gravity
+  ghc-options: -Wall
+  build-depends:
+      base
+    , coding-challenges
+    , gloss
+    , random
+  default-language: Haskell2010
+
+executable maze-generator
+  main-is: Main.hs
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      maze-generator
+  ghc-options: -Wall
+  build-depends:
+      base
+    , gloss
+    , random
+  default-language: Haskell2010
+
+executable purple-rain
+  main-is: Main.hs
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      purple-rain
+  ghc-options: -Wall
+  build-depends:
+      base
+    , gloss
+    , random
+  default-language: Haskell2010
+
+executable solar-system
+  main-is: Main.hs
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      solar-system
+  ghc-options: -Wall
+  build-depends:
+      base
+    , gloss
+    , random
+  default-language: Haskell2010
+
+executable starfield
+  main-is: Main.hs
+  other-modules:
+      Paths_coding_challenges
+  hs-source-dirs:
+      starfield
+  ghc-options: -Wall
+  build-depends:
+      base
+    , gloss
+    , random
+  default-language: Haskell2010
+
+executable terrain-generator
+  main-is: Main.hs
+  other-modules:
+      CodingChallanges.TerrainGenerator
+      CodingChallanges.TerrainGenerator.SimplexNoise
+      CodingChallanges.TerrainGenerator.Terrain
+      Paths_coding_challenges
+  hs-source-dirs:
+      terrain-generator
+  ghc-options: -Wall
+  build-depends:
+      base
+    , coding-challenges
+    , gloss
+  default-language: Haskell2010

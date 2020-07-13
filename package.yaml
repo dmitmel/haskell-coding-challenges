@@ -1,0 +1,73 @@
+name: coding-challenges
+version: 0.1.0
+synopsis: Implementations of TheCodingTrain's Coding Challenges in Haskell
+description: See README at <https://github.com/dmitmel/coding-challenges#readme>
+category: Learning
+copyright: (c) 2017 Dmytro Meleshko
+author: Dmytro Meleshko
+maintainer: Dmytro Meleshko <dmytro.meleshko@gmail.com>
+github: dmitmel/coding-challenges
+license: Apache-2.0
+stability: stable
+dependencies:
+- base
+- gloss
+ghc-options:
+- -Wall
+extra-source-files:
+- README.md
+- LICENSE
+library:
+    source-dirs: lib
+    dependencies:
+    - random
+    - bytestring
+executables:
+    starfield:
+        main: Main.hs
+        source-dirs: starfield
+        dependencies:
+        - random
+    purple-rain:
+        main: Main.hs
+        source-dirs: purple-rain
+        dependencies:
+        - random
+    solar-system:
+        main: Main.hs
+        source-dirs: solar-system
+        dependencies:
+        - random
+    maze-generator:
+        main: Main.hs
+        source-dirs: maze-generator
+        dependencies:
+        - random
+    game-of-life:
+        main: Main.hs
+        source-dirs: game-of-life
+    terrain-generator:
+        main: Main.hs
+        source-dirs: terrain-generator
+        dependencies:
+        - coding-challenges
+    gravity:
+        main: Main.hs
+        source-dirs: gravity
+        dependencies:
+        - random
+        - coding-challenges
+    elemetary-cellular-automata:
+        main: Main.hs
+        source-dirs: elemetary-cellular-automata
+        dependencies:
+        - coding-challenges
+    L-systems:
+        main: Main.hs
+        source-dirs: L-systems
+        dependencies:
+        - coding-challenges
+        - aeson
+        - containers
+        - bytestring
+        - argparser

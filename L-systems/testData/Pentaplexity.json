@@ -1,0 +1,8 @@
+{
+    "name": "Pentaplexity",
+    "angle": 36,
+    "axiom": "F++F++F++F++F",
+    "rules": {
+        "F": "F++F++F+++++F-F++F"
+    }
+}

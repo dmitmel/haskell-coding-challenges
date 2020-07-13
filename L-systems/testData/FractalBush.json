@@ -1,0 +1,8 @@
+{
+    "name": "Fractal Bush",
+    "angle": 25,
+    "axiom": "^F",
+    "rules": {
+        "F": "FF+[+F-F-F]-[-F+F+F]"
+    }
+}
